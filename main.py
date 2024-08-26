@@ -1,6 +1,10 @@
-grades = [[5, 3, 3, 5, 4], [2, 2, 2, 3], [4, 5, 5, 2], [4, 4, 3], [5, 5, 5, 4, 5]]
-students = sorted(list({'Johnny', 'Bilbo', 'Steve', 'Khendrik', 'Aaron'}))
-average_rating = {}
-for i in range(len(students)):
-    average_rating[students[i]] = sum(grades[i]) / len(grades[i])
-print(average_rating)
+first = int(input('Введите число: '))
+second = int(input('Введите число: '))
+third = int(input('Введите число: '))
+
+if first == second and first == third and second == third: # условия проверки равности чисел
+    print(3)
+elif first == second or first == third or second == third:
+    print(2)
+else:
+    print(0)
